@@ -7,9 +7,10 @@
 } */
 
 :root {
-  --gray-color: #e4e6f2;
+  --white-color: #eee;
+  --gray-purple-color: #e4e6f2;
   --sand-color: #d9985f;
   --white-sand-color: #f2e8df;
   --salmon-dark-color: #8c3c1f;
-  --beige_color: #f29f80;
+  --beige-color: #f29f80;
 }

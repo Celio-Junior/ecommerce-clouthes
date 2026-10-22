@@ -1,6 +1,8 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import "./globals.css";
+
 import { cn } from "@/src/utils/function-formats";
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
@@ -14,7 +16,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className="min-h-full w-full">
       <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
-      <body className={cn("min-h-full h-dvh min-w-full", open_sans.className)}>
+      <body
+        className={cn(
+          "min-h-full h-dvh min-w-full bg-(--gray-purple-color)",
+          open_sans.className,
+        )}
+      >
         {children}
       </body>
     </html>
