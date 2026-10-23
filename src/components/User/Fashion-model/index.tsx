@@ -11,15 +11,9 @@ export type FashionModelProps = {
 export function FashionModel({ src, children }: FashionModelProps) {
   return (
     <div
-      // style={{
-      //   backgroundImage: "url(/images/model-female-login.jpg)",
-      //   objectFit: "cover",
-      //   backgroundSize: "100% 100%",
-      //   backgroundRepeat: "no-repeat",
-      // }}
+      style={{ backgroundImage: `url("${src}")` }}
       className={cn(
-        `bg-[url(${src})]`,
-        "bg-cover bg-no-repeat w-[40%]",
+        "bg-cover bg-center bg-no-repeat w-[50%]",
         "rounded-2xl",
         "flex flex-col justify-between",
         "p-12",
@@ -31,18 +25,25 @@ export function FashionModel({ src, children }: FashionModelProps) {
           src="/icon.svg"
           alt="model-female-login"
           width={45}
-          height={40}
+          height={45}
         />{" "}
-        <Link className="text-5xl font-medium" href={"/"}>
+        <Link
+          className="text-5xl font-medium text-(--salmon-dark-color)"
+          href={"/"}
+        >
           Northline
         </Link>
       </h1>
       {/* imagem */}
 
       <div>
-        <h2 className="text-3xl font-bold">{children}</h2>
+        <h2 className="text-3xl text-shadow-2xs font-bold text-(--salmon-dark-color)">
+          {children}
+        </h2>
         <h3 className="text-3xl font-semibold mt-5">Celio Junior</h3>
-        <h4 className="text-xl font-medium">Development of software</h4>
+        <h4 className="text-xl font-medium text-gray-800">
+          Development of software
+        </h4>
       </div>
     </div>
   );
