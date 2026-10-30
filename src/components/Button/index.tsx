@@ -13,8 +13,8 @@ const buttonVariants = {
   default: "",
   confirm: cn(
     "transition duration-150 cursor-pointer hover:text-gray-700 text-white",
-    "bg-(--beige-color) hover:bg-(--sand-color)",
-    "hover:scale-105",
+    "bg-(--beige-color) hover:bg-(--salmon-dark-color) hover:text-(--white-sand-color)",
+    "hover:scale-103",
   ),
 };
 

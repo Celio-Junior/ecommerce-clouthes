@@ -2,7 +2,7 @@ import { FashionModel } from "@/src/components/User/Fashion-model";
 
 import { FormRegister } from "@/src/components/User/Form/FormRegister";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <>
       <FashionModel src="/images/model-female-login2.jpg">
