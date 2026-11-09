@@ -1,6 +1,6 @@
-import { FashionModel } from "@/src/components/User/Fashion-model";
+import { FashionModel } from "@/components/User/Fashion-model";
 
-import { FormRegister } from "@/src/components/User/Form/FormRegister";
+import { FormRegister } from "@/components/User/Form/FormRegister";
 
 export default function RegisterPage() {
   return (

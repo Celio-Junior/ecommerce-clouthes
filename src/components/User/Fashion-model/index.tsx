@@ -1,4 +1,4 @@
-import { cn } from "@/src/utils/function-formats";
+import { cn } from "@/utils/function-formats";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

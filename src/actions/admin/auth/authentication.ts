@@ -1,9 +1,9 @@
 "use server";
 import { styleText } from "node:util";
 import envVar from "env-var";
-import { AdminLoginSchema } from "@/src/lib/validations/admin";
+import { AdminLoginSchema } from "@/lib/validations/admin";
 import { redirect } from "next/navigation";
-import LoginSessionUser from "@/src/lib/login/manage-users";
+import LoginSessionUser from "@/lib/login/manage-users";
 
 export default async function authenticationAdminAction(formData: FormData) {
   const isAuth = AdminLoginSchema.safeParse(Object.fromEntries(formData));

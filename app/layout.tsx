@@ -1,9 +1,11 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, Geist } from "next/font/google";
+import { ToastContainer, Bounce } from "react-toastify";
+import { cn } from "@/utils/function-formats";
 
-import { cn } from "@/src/utils/function-formats";
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const open_sans = Open_Sans({ subsets: ["latin"] });
 
@@ -14,7 +16,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className="min-h-full w-full">
+    <html
+      lang="pt-BR"
+      className={cn("min-h-full w-full", "font-sans", geist.variable)}
+    >
       <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
       <body
         className={cn(
@@ -23,6 +28,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         )}
       >
         {children}
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
       </body>
     </html>
   );

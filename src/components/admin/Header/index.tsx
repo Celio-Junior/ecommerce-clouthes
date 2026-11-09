@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeaderAdmin() {
   return (
-    <header className="min-w-50 w-full mx-auto max-w-480 py-8 p-5 md:px-12">
+    <header className="min-w-50 w-full mx-auto max-w-480 py-8 p-5 md:px-12 shadow-sm">
       <div className="w-full flex items-center gap-5">
         <h1 className="flex-1">
           <Link
@@ -25,6 +25,8 @@ export default function HeaderAdmin() {
         <div className="flex-2 lg:flex-4 xl:flex-5">
           <NavigationAdmin links={["settings", "billboards"]} />
         </div>
+
+        <div>user</div>
       </div>
     </header>
   );

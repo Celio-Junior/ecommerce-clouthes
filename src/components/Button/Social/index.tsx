@@ -2,7 +2,7 @@
 import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 import { Button } from "..";
-import { cn } from "@/src/utils/function-formats";
+import { cn } from "@/utils/function-formats";
 
 export function ButtonSocial() {
   return (

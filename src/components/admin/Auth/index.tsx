@@ -1,21 +1,24 @@
 "use client";
 
-import { cn } from "@/src/utils/function-formats";
+import { cn } from "@/utils/function-formats";
 import { Button } from "../../Button";
 import { Input } from "../../Input";
 import { SubmitEvent } from "react";
-import authenticationAdminAction from "@/src/actions/admin/auth/authentication";
+import authenticationAdminAction from "@/actions/admin/auth/authentication";
 
 type AuthProps = {
   children: React.ReactNode;
 };
 
 const inputClass = cn(
-  "outline-0 border-2 rounded-xl text-lg px-2 py-1",
+  "outline-0 rounded-xl text-lg px-3 py-2",
   "focus:border-(--beige-color) text-gray-700",
   "outline-3 outline-transparent focus:outline-(--beige-color)",
 );
-const labelClass = cn("text-xl text-(--salmon-dark-color) font-semibold");
+const labelClass = cn(
+  "text-xl text-(--salmon-dark-color) font-semibold",
+  "mt-3",
+);
 
 let isValidationUser = true;
 export function Auth({ children }: AuthProps) {
@@ -46,14 +49,14 @@ export function Auth({ children }: AuthProps) {
             className={labelClass}
             classInput={inputClass}
             name="email"
-            variant="customer"
+            variant="form"
             label="Email"
           />
           <Input
             className={labelClass}
             classInput={inputClass}
             name="password"
-            variant="customer"
+            variant="form"
             label="Password"
             type="password"
           />
@@ -62,7 +65,7 @@ export function Auth({ children }: AuthProps) {
             className="w-full my-5"
             size="xl"
             type="submit"
-            variant="confirm"
+            variant="form"
           >
             login
           </Button>

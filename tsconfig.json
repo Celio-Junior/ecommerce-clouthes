@@ -19,7 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -29,7 +29,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "src/tests/admin/login.test.js"
+    "src/tests/admin/login.test.js",
+    "src/tests/functions/extract-styles.test.ts"
   ],
   "exclude": ["node_modules"]
 }

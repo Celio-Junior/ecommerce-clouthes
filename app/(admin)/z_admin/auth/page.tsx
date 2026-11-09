@@ -1,4 +1,4 @@
-import { Auth } from "@/src/components/admin/Auth";
+import { Auth } from "@/components/admin/Auth";
 
 export default function AuthAdmin() {
   return (

@@ -1,5 +1,5 @@
-import { FashionModel } from "@/src/components/User/Fashion-model";
-import { FormLogin } from "@/src/components/User/Form/FormLogin";
+import { FashionModel } from "@/components/User/Fashion-model";
+import { FormLogin } from "@/components/User/Form/FormLogin";
 
 export default function LoginPage() {
   return (

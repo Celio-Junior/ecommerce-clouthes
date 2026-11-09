@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["Norhline", "Northline"]
+  "cSpell.words": ["Norhline", "Northline", "geist"],
+  "code-runner.executorMap": {
+    "typescript": "npx tsx"
+  }
 }

@@ -1,4 +1,4 @@
-import HeaderAdmin from "@/src/components/admin/Header";
+import HeaderAdmin from "@/components/admin/Header";
 import { headers } from "next/headers";
 import { Suspense } from "react";
 
@@ -6,7 +6,9 @@ export default function RootAdmin({ children }: LayoutProps<"/account">) {
   return (
     <Suspense fallback={null}>
       <HeaderAdminLogic />
-      <main>{children}</main>
+      <main className="p-5 md:px-12 min-w-50 w-full mx-auto max-w-480">
+        {children}
+      </main>
     </Suspense>
   );
 }

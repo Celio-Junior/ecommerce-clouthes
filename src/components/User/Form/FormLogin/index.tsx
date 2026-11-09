@@ -1,8 +1,8 @@
 "use client";
-import { Button } from "@/src/components/Button";
-import { ButtonSocial } from "@/src/components/Button/Social";
-import { Input } from "@/src/components/Input";
-import { cn } from "@/src/utils/function-formats";
+import { Button } from "@/components/Button";
+import { ButtonSocial } from "@/components/Button/Social";
+import { Input } from "@/components/Input";
+import { cn } from "@/utils/function-formats";
 
 import Link from "next/link";
 
