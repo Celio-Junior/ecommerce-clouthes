@@ -9,7 +9,7 @@ const labelVariant = {
   form: cn(
     "w-fit block",
     "absolute z-1 left-2",
-    "text-(--salmon-dark-color)  font-semibold text-lg bg-white",
+    "text-(--salmon-dark-color)  font-semibold text-lg bg-gray-50",
     "peer-focus:-translate-y-6 peer-focus:text-(--sand-color)",
   ),
   default: cn(
@@ -20,7 +20,7 @@ const labelVariant = {
 
 const inputVariant = {
   customer: "",
-  form: cn("outline-0 px-3 py-2 z-0", "w-full"),
+  form: cn("outline-0 px-3 py-2 z-2", "w-full"),
   default: cn(
     "w-full text-lg  rounded-lg p-2 font-semibold ",
     "border-2 border-gray-900 outline outline-transparent focus:outline-gray-900 bg-gray-50",
@@ -31,7 +31,7 @@ type InputProps = {
   classInput?: InputProps["className"];
   label: string;
   htmlFor?: string;
-  variant: keyof typeof labelVariant;
+  variant?: keyof typeof labelVariant;
 } & ComponentPropsWithRef<"input">;
 export function Input({
   className = "",
@@ -44,7 +44,7 @@ export function Input({
   ...rest
 }: InputProps) {
   const divClassName = cn(
-    "flex justify-center relative",
+    "flex justify-center relative z-0",
     "flex-col-reverse",
     variant === "form" && "border rounded-xl flex-col w-full shadow-lg",
     variant === "default" && "w-1/3 gap-3",

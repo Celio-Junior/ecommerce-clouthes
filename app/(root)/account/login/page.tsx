@@ -9,8 +9,8 @@ export default function LoginPage() {
         estilo&quot;
       </FashionModel>
 
-      <div className="w-full">
-        <div className="p-6 mt-30 w-[50%] min-w-120 m-auto rounded-2xl bg-white shadow-2xs">
+      <div className="w-full bg-gray-100">
+        <div className="p-6 mt-30 w-[50%] min-w-120 m-auto rounded-2xl bg-gray-50 shadow-2xs">
           <div className="flex flex-col items-center">
             <h1 className="text-3xl md:text-4xl font-bold ">
               Welcome Northline

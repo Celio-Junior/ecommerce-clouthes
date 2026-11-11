@@ -12,12 +12,12 @@ export function FormSettings() {
   };
 
   return (
-    <form onSubmit={handleForm} action="">
+    <form onSubmit={handleForm} className="shadow-sm py-4 px-1 rounded-md">
       <Input
         type="text"
         variant="default"
         label="Store Name"
-        placeholder="Northline"
+        placeholder="Name store"
         defaultValue={"Northline"}
       />
       <Button type="submit" size="xl" variant="default">

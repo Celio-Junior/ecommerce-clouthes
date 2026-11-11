@@ -3,7 +3,7 @@ import { cn } from "@/utils/function-formats";
 import { ComponentPropsWithoutRef } from "react";
 
 const buttonSizes = {
-  md: cn("text-md p-1 font-medium"),
+  md: cn("text-md p-1 rounded-md font-medium cursor-pointer"),
   lg: cn("text-lg p-3 font-semibold rounded-xl", "transition duration-120"),
   xl: cn("text-2xl px-6 py-4 font-bold rounded-xl transition duration-110"),
 };

@@ -23,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
       <body
         className={cn(
-          "min-h-full h-dvh min-w-full bg-(--gray-purple-color)",
+          "min-h-full h-dvh min-w-full bg-gray-50",
           open_sans.className,
         )}
       >

@@ -11,10 +11,16 @@ export function FormRegister() {
     <form className="w-full mt-5" action="">
       <fieldset className={cn("w-full")}>
         <div className="flex flex-col gap-8 mb-5">
-          <Input label="Name" name="password" type="text" />
-          <Input name="email" label="Email" type="email" />
-          <Input label="Password" name="password" type="password" />
+          <Input variant="form" label="Name" name="password" type="text" />
+          <Input variant="form" name="email" label="Email" type="email" />
           <Input
+            variant="form"
+            label="Password"
+            name="password"
+            type="password"
+          />
+          <Input
+            variant="form"
             htmlFor="password2"
             label="Repeat password"
             name="password2"
@@ -22,7 +28,7 @@ export function FormRegister() {
           />
         </div>
 
-        <Button variant="confirm">Create account</Button>
+        <Button variant="form">Create account</Button>
         <ButtonSocial />
         <span className="block my-7 m-auto w-fit text-gray-500 font-semibold text-md">
           have an account?{" "}

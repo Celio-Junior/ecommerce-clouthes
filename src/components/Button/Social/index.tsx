@@ -16,11 +16,11 @@ export function ButtonSocial() {
         size="md"
         variant="customer"
         className={cn(
-          "flex items-center justify-center mt-5 p-4 relative",
+          "flex items-center gap-3 justify-center mt-5 p-4",
           "bg-(--gray-purple-color) hover:bg-(--white-sand-color) shadow-2xl hover:text-(--salmon-dark-color) hover:scale-105",
         )}
       >
-        <FcGoogle className="w-10 h-10 absolute left-4" /> Continue with Google
+        <FcGoogle className="w-10 h-10 left-4" /> Continue with Google
       </Button>
     </div>
   );

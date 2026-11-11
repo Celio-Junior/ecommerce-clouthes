@@ -10,9 +10,21 @@ export function FormLogin() {
   return (
     <form className="w-full mt-5" action="">
       <fieldset className={cn("w-full")}>
-        <Input className="mb-6" name="email" label="Email" type="email" />
+        <Input
+          variant="form"
+          className=""
+          name="email"
+          label="Email"
+          type="email"
+        />
 
-        <Input label="Password" name="password" type="password" />
+        <Input
+          className="mt-5"
+          variant="form"
+          label="Password"
+          name="password"
+          type="password"
+        />
 
         <span className="block mt-2 mb-7">
           <Link
@@ -23,7 +35,7 @@ export function FormLogin() {
           </Link>
         </span>
 
-        <Button variant="confirm">Login</Button>
+        <Button variant="form">Login</Button>
         <ButtonSocial />
         <span className="block my-7 m-auto w-fit text-gray-500 font-semibold text-md">
           Don´t have an account?{" "}
