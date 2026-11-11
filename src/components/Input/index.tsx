@@ -23,7 +23,7 @@ const inputVariant = {
   form: cn("outline-0 px-3 py-2 z-0", "w-full"),
   default: cn(
     "w-full text-lg  rounded-lg p-2 font-semibold ",
-    "border-2 border-gray-900 outline outline-transparent focus:outline-gray-900",
+    "border-2 border-gray-900 outline outline-transparent focus:outline-gray-900 bg-gray-50",
   ),
 };
 
@@ -55,6 +55,11 @@ export function Input({
     "flex",
     "grid",
     "mt",
+    "m",
+    "my",
+    "mx",
+    "ml",
+    "mr",
     "gap",
   );
 

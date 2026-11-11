@@ -3,7 +3,6 @@ import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import { toastMessages } from "@/lib/toast";
 import { SubmitEvent } from "react";
-import { toast } from "react-toastify";
 
 export function FormSettings() {
   const handleForm = (e: SubmitEvent<HTMLFormElement>) => {
@@ -21,7 +20,7 @@ export function FormSettings() {
         placeholder="Northline"
         defaultValue={"Northline"}
       />
-      <Button type="submit" size="lg" variant="default">
+      <Button type="submit" size="xl" variant="default">
         Save changes
       </Button>
     </form>

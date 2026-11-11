@@ -5,14 +5,14 @@ import { ComponentPropsWithoutRef } from "react";
 const buttonSizes = {
   md: cn("text-md p-1 font-medium"),
   lg: cn("text-lg p-3 font-semibold rounded-xl", "transition duration-120"),
-  xl: cn("text-2xl p-5 font-bold"),
+  xl: cn("text-2xl px-6 py-4 font-bold rounded-xl transition duration-110"),
 };
 
 const buttonVariants = {
   customer: "",
   default: cn(
     "cursor-pointer",
-    "bg-blue-400 text-gray-200 hover:bg-blue-700 hover:text-gray-50 hover:scale-105 mt-5",
+    "bg-gray-950 text-gray-200 hove hover:scale-105 mt-5",
   ),
   form: cn(
     "transition duration-150 cursor-pointer hover:text-gray-700 text-white",
